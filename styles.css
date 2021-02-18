@@ -1,8 +1,32 @@
 #hold-shapes {
     width: 600px;
-    height: 600px;;
+    height: 600px;
+    float: left;
+    margin: 4em;
+    padding: 1.5em;
 }
 
 #side-panel {
+    width: 300px;
+    height: 600px;
+    float: left;
     background-color: rgb(60, 132, 127);
+    margin: 4em;
+    padding: 1.5em;
+}
+
+#shape-circles {
+    background-color: purple;
+}
+
+#shape-squares {
+    background-color: red;
+}
+
+#shape-triangles {
+    background-color: yellow;
+}
+
+#shape-rectangles {
+    background-color: green;
 }

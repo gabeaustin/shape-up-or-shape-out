@@ -9,3 +9,28 @@ function randomBgColor() {
     }
 
     randomBgColor();
+
+class Shape {
+
+}
+
+class Circle {
+    constructor(radius) {
+    }
+}
+
+class Triangle {
+    constructor(height) {
+        // height, width, base will all be the same
+    }
+}
+
+class Rectangle {
+    constructor(width, height) {
+    }
+}
+
+class Square {
+    constructor(sideLength) {
+    }
+}
