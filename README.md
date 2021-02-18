@@ -1,6 +1,6 @@
-## <span style="color: #CC5500;">**Due Date: Friday, 2/19 at 1:00 pm**</span> 
-***
-# Shape Up Or Shape Out
+## **Due Date: Friday, 2/19 at 1:00 pm**
+
+# Shape Up or Shape Out
 The purpose of this lab is to help solidify the OOP Class inheritance concepts you've learned from the lectures.
 
 ### [Lab Demo](https://www.youtube.com/watch?v=DXfDlDyofdk&feature=emb_logo)
@@ -72,5 +72,6 @@ The purpose of this lab is to help solidify the OOP Class inheritance concepts y
 * Triangle area: ``0.5 * base * height``
 * Triangle perimeter (right isoceles): ``2 * height + (square root of 2) * height``
 
-:octocat: Shape Up Or Shape Out :octocat:
+
+:octocat: Shape Up or Shape Out :octocat:
 
