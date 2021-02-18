@@ -2,3 +2,7 @@
     width: 600px;
     height: 600px;;
 }
+
+#side-panel {
+    background-color: rgb(60, 132, 127);
+}
