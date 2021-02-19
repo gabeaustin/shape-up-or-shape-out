@@ -1,9 +1,10 @@
-let container = document.getElementById("shapes-container");
+let container = document.getElementById("hold-shapes");
 let addRecBtn = document.getElementById("add-rec-btn");
 let addSquBtn = document.getElementById("add-squ-btn");
 let addCirBtn = document.getElementById("add-cir-btn");
 let addTriBtn = document.getElementById("add-tri-btn");
 let setBgColor = document.getElementById("hold-shapes");
+let cirRadiusVal = document.getElementById("cir-radius").value;
 
 // set random color for background of shapes div
 function randomBgColor() {
@@ -17,31 +18,9 @@ function randomBgColor() {
 
 class Shape {
     constructor() {
-        let canvas = document.getElementById("hold-shapes");
-        let context = canvas.getContext("2d");
-        context.lineWidth = 3;
-        context.strokeStyle = "brown";
 
-        this.xPoint = xPoint;
-        this.yPoint = yPoint;
-        this.radius = radius;
-        this.color = color;
     }
 }
-
-function f() {
-    var t = document.getElementById("cir-radius").value;
-    document.getElementById("displayShapeRadius").innerHTML = t;
-  }
-
-  f();
-
-addCirBtn.addEventListener("click", () => {
-    alert(f());
-    new Circle(100);
-    console.log(addCirBtn.value);
-})
-
 
 class Circle {
     constructor(cirRadius) {
@@ -49,10 +28,6 @@ class Circle {
         this.cirDiv = document.createElement("div");
         this.cirDiv.classList.add("newCircle");
         container.appendChild(this.cirDiv);
-
-        context.beginPath();
-        context.arc(150, 50, 20, 0, Math.PI * 2, false); // hard code for now to test
-        context.stroke();
     }
 }
 
@@ -69,7 +44,6 @@ class Rectangle {
     constructor(recWidth, recHeight) {
         this.recWidth = recWidth;
         this.recHeight = recHeight;
-
     }
 }
 

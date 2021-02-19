@@ -10,37 +10,38 @@
     </head>
     <body>
         <div id="shapes-container">
+            <div id="add-shape-title"><h2>Add A Shape</h2></div>
             <form>
-                <h3>Input for Rectangle</h3>
-                <label for="rec-height">Height: </label>
-                <input type="number" id="rec-height" name="rec-height"><br><br>
-                <label for="rec-width">Width: </label>
-                <input type="number" id="rec-width" name="rec-width"><br><br>
+                <h3>Add Rectangle</h3>
+                <label>Height: </label>
+                <input type="number" id="rec-height" placeholder="height px"><br><br>
+                <label>Width: </label>
+                <input type="number" id="rec-width" placeholder="width px"><br><br>
                 <input type="button" value="Submit" id="add-rec-btn">
                 
-                <h3>Input for Square</h3>
-                <label for="squ-side-length">Side Length: </label>
-                <input type="number" id="squ-side-length" name="squ-side-length"><br><br>
+                <h3>Add Square</h3>
+                <label>Side Length: </label>
+                <input type="number" id="squ-side-length" placeholder="side length px"><br><br>
                 <input type="button" value="Submit" id="add-squ-btn">
 
-                <h3>Input for Circle</h3>
-                <input type="number" id="cir-radius" name="cir-radius"><br><br>
+                <h3>Add Circle</h3>
+                <input type="number" id="cir-radius" placeholder="radius px"><br><br>
                 <input type="button" value="Submit" id="add-cir-btn">
                 
-                <h3>Input for Isoceles Right Triangle</h3>
-                <input type="number" id="tri-height" name="tri-height"><br><br>
+                <h3>Add Triangle</h3>
+                <input type="number" id="tri-height" placeholder="height px"><br><br>
                 <input type="button" value="Submit" id="add-tri-btn">
             </form>
 
             <div id="hold-shapes"></div>
 
             <div id="side-panel">
-                <h4>Shape Name:  <input type="number" name="displayShapeName" id="displayShapeName"></h4>
-                <h4>Width:  <input type="number" name="displayShapeWidth" id="displayShapeWidth"></h4>
-                <h4>Height:  <input type="number" name="displayShapeHeight" id="displayShapeHeight"></h4>
-                <h4>Radius:  <input type="number" name="displayShapeRadius" id="displayShapeRadius"></h4>
-                <h4>Area:  <input type="number" name="displayShapeArea" id="displayShapeArea"></h4>
-                <h4>Perimeter:  <input type="number" name="displayShapePerimeter" id="displayShapePerimeter"></h4>
+                <h4>Shape Name:  <input type="number" id="displayShapeName"></h4>
+                <h4>Width:  <input type="number" id="displayShapeWidth"></h4>
+                <h4>Height:  <input type="number" id="displayShapeHeight"></h4>
+                <h4>Radius:  <input type="number" id="displayShapeRadius"></h4>
+                <h4>Area:  <input type="number" id="displayShapeArea"></h4>
+                <h4>Perimeter:  <input type="number" id="displayShapePerimeter"></h4>
             </div>
         </div>
         
