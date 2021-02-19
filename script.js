@@ -22,6 +22,15 @@ class Shape {
         this.width = width;
         this.height = height;
     }
+    draw() {
+        if(this.width > max && this.height > max ) {
+            return alert("Too large. Try again.");
+        } else if (this.width > max) {
+            return alert(`Width of ${this.width}px is too large. Try again.`); 
+        } else if (this.height > max) {
+            return alert(`Height of ${this.height}px is too large. Try again.`);
+        }
+    };
 }
 
 class Circle {
