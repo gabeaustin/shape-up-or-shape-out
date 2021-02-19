@@ -1,3 +1,4 @@
+const max = 600;
 let container = document.getElementById("box-to-hold-shapes");
 let addRecBtn = document.getElementById("add-rectangle-btn");
 let addSquBtn = document.getElementById("add-square-btn");
@@ -17,8 +18,9 @@ function randomBgColor() {
 
 
 class Shape {
-    constructor() {
-
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
     }
 }
 
