@@ -9,27 +9,27 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
+        <div id="shapes-container">
             <form>
                 <h3>Input for Rectangle</h3>
                 <label for="rec-height">Height: </label>
                 <input type="number" id="rec-height" name="rec-height"><br><br>
                 <label for="rec-width">Width: </label>
                 <input type="number" id="rec-width" name="rec-width"><br><br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" id="add-rec-btn">
                 
                 <h3>Input for Square</h3>
                 <label for="squ-side-length">Side Length: </label>
                 <input type="number" id="squ-side-length" name="squ-side-length"><br><br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" id="add-squ-btn">
 
                 <h3>Input for Circle</h3>
                 <input type="number" id="cir-radius" name="cir-radius"><br><br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" id="add-cir-btn">
                 
                 <h3>Input for Isoceles Right Triangle</h3>
                 <input type="number" id="tri-height" name="tri-height"><br><br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" id="add-tri-btn">
             </form>
 
             <div id="hold-shapes"></div>

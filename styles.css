@@ -30,3 +30,7 @@
 #shape-rectangles {
     background-color: green;
 }
+
+.newCircle {
+    border: 5px solid pink;
+}
