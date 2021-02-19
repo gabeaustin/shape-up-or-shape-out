@@ -16,6 +16,23 @@ let addSquBtn = document.getElementById("add-square-btn");
 let addCirBtn = document.getElementById("add-circle-btn");
 let addTriBtn = document.getElementById("add-triangle-btn");
 
+addRecBtn.addEventListener("click", function newRectangle() {
+    new Rectangle(rectangleHeight.value, rectangleWidth.value);
+    Rectangle.describe();
+})
+
+addSquBtn.addEventListener("click", function newSquare() {
+    new Square(squareSideLength.value);
+})
+
+addCirBtn.addEventListener("click", function newCircle() {
+    new Circle(circleRadius.value);
+})
+
+addTriBtn.addEventListener("click", function newTriangle() {
+    new Triangle(triangleHeight.value);
+});
+
 // set random color for background of shapes div
 function randomBgColor() {
     let rgbColorOne = Math.floor(Math.random() * 256);
@@ -25,6 +42,8 @@ function randomBgColor() {
     setBgColor.style.background = bgColor;
     }
     randomBgColor();
+
+
 
 
 class Shape {
@@ -52,6 +71,9 @@ class Shape {
         container.appendChild(this.div);
     };
     describe() {
+    
+    }
+};
         class Circle extends Shape {
             constructor(radius) {
                 super(radius, radius);
@@ -65,10 +87,10 @@ class Shape {
             constructor(height) {
                 super(height, height);
                 this.cssClass = "shape-triangles";
-                this.div.style.width = "0";
-                this.div.style.height = "0";
-                this.div.style.borderBottomWidth = `${height}px`;
-                this.div.style.borderRightWidth = `${height}px`;
+                // this.div.style.width = "0";
+                // this.div.style.height = "0";
+                // this.div.style.borderBottomWidth = `${height}px`;
+                // this.div.style.borderRightWidth = `${height}px`;
                 this.draw();
             }
         }
@@ -88,5 +110,3 @@ class Shape {
                 this.draw();
             }
         }
-    }
-}
