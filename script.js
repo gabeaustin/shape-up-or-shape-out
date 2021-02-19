@@ -23,25 +23,28 @@ class Shape {
 }
 
 class Circle {
-    constructor() {
+    constructor(radius) {
+        this.radius = radius;
 
     }
 }
 
 class Triangle {
-    constructor() {
+    constructor(height) {
+        this.height = height;
 
     }
 }
 
 class Rectangle {
-    constructor() {
-
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
     }
 }
 
 class Square {
-    constructor() {
-
+    constructor(sideLength) {
+        this.sideLength = sideLength;
     }
 }
