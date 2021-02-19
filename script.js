@@ -42,7 +42,7 @@ class Shape {
         };
         
         let xWidth = Math.floor(Math.random() * (max - this.width));
-        let yWidth = Math.floor(Math.random() * (max - this.height));
+        let yHeight = Math.floor(Math.random() * (max - this.height));
         this.div = document.getElementById("div");
         this.div.classList.add(this.cssClass);
         this.div.style.left = `${xWidth}px`;
@@ -51,32 +51,42 @@ class Shape {
         this.div.style.height = `${this.height}px`;
         container.appendChild(this.div);
     };
-    
-}
+    describe() {
+        class Circle extends Shape {
+            constructor(radius) {
+                super(radius, radius);
+                // this.radius = radius;
+                this.cssClass = "shape-circles";
+                this.draw();
+            }
+        }
 
-class Circle extends Shape {
-    constructor(radius) {
-        this.radius = radius;
+        class Triangle extends Shape {
+            constructor(height) {
+                super(height, height);
+                this.cssClass = "shape-triangles";
+                this.div.style.width = "0";
+                this.div.style.height = "0";
+                this.div.style.borderBottomWidth = `${height}px`;
+                this.div.style.borderRightWidth = `${height}px`;
+                this.draw();
+            }
+        }
 
-    }
-}
+        class Rectangle extends Shape {
+            constructor(width, height) {
+                super(height, width);
+                this.cssClass = "shape-rectangles";
+                this.draw();
+            }
+        }
 
-class Triangle {
-    constructor(height) {
-        this.height = height;
-
-    }
-}
-
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-    }
-}
-
-class Square {
-    constructor(sideLength) {
-        this.sideLength = sideLength;
+        class Square extends Shape {
+            constructor(sideLength) {
+                super(sideLength, sideLength);
+                this.cssClass = "shape-squares";
+                this.draw();
+            }
+        }
     }
 }
