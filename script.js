@@ -63,7 +63,7 @@ class Shape {
         let xWidth = Math.floor(Math.random() * (max - this.width));
         let yHeight = Math.floor(Math.random() * (max - this.height));
         this.div = document.getElementById("div");
-        this.div.classList.add(this.cssClass);
+        this.div.classList.add(this.addClass);
         this.div.style.left = `${xWidth}px`;
         this.div.style.top = `${yWidth}px`;
         this.div.style.width = `${this.width}px`;
@@ -78,7 +78,7 @@ class Shape {
             constructor(radius) {
                 super(radius, radius);
                 // this.radius = radius;
-                this.cssClass = "shape-circles";
+                this.addClass = "shape-circles";
                 this.draw();
             }
         }
